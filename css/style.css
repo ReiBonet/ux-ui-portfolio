@@ -71,6 +71,10 @@ section.about div.description {
     margin: 84px 0 0 0;
 }
 
+.about-description {
+    margin-bottom: 1em;
+}
+
 .image-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
