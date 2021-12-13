@@ -559,7 +559,13 @@ footer a {
         text-align: center;
     }
     /* project page */
-    .project-hero {
+    .project-hero,
+    .synthesis-img,
+    .user-journey-map,
+    .ideation-sketch,
+    .interaction-flow,
+    .interactive-prototype,
+    .newswhip-prototype {
         width: 300px;
         margin: 2em auto 2em auto;
     }
