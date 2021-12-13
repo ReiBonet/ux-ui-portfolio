@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Nunito+Sans&display=swap');
+body {
+    font-family: Nunito Sans;
+    font-size: 16px;
+    line-height: 1.2;
+    background-color: #111118;
+    color: #ffffff;
+    margin: 80px auto 48px auto;
+    width: 1120px;
+}
+
+
+/* index page styling starts here*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1,
+nav,
+footer {
+    font-family: Josefin Sans;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: Josefin Sans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0 0 16px 0;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 0 0 26px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #f4BCBB;
+}
+
+section {
+    margin: 80px auto 80px auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px 32px;
+    grid-auto-flow: dense;
+}
+
+section h1 {
+    grid-column: 2 / span 10;
+    text-align: center;
+    font-size: 18px;
+}
+
+section.about div.img-about {
+    grid-column: 1 / span 6;
+    max-height: 640px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+section.about div.description {
+    grid-column: 7 / span 6;
+    margin: 84px 0 0 0;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 25px 25px;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+}
+
+.image-gallery img {
+    display: block;
+    width: 300px;
+    height: auto;
+}
+
+.tagline {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 32px 32px 32px 32px;
+}
+
+a.button-cv {
+    font-family: Josefin Sans;
+    padding: 12px 24px;
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.3s;
+    margin: 10px 0 0 0;
+    letter-spacing: 1px;
+}
+
+a.button-cv:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 80px 32px 32px 32px;
+}
+
+footer a {
+    margin: 32px 32px 0 0;
+}
+
+.image-cover {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    margin: 0 auto 0 auto;
+}
+
+.image-cover:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    opacity: 1;
+    color: white;
+    text-transform: bold;
+    font-size: 2em;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0 auto 0 auto;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 2em;
+}
+
+.typing-demo {
+    width: 10em;
+    animation: typing 2s steps(25), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    font-family: Josefin Sans;
+    font-size: 2em;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+
+/* project page introduction styling starts here */
+
+.project-intro {
+    display: block;
+    margin: 4em 0 8em 0;
+}
+
+.project-title {
+    display: flex;
+    font-size: 3em;
+}
+
+.project-hero {
+    display: block;
+    height: auto;
+    width: 800px;
+    margin: 2em auto 2em auto;
+}
+
+.project-details {
+    display: flex;
+    align-items: inherit;
+    margin: 3em 0 2em 0;
+}
+
+.project-description {
+    flex: 1;
+}
+
+.project-about {
+    margin: 2em 0 2em 0;
+}
+
+.project-challenge {
+    margin: 2em 0 2em 0;
+}
+
+
+/* project page solution styling starts here */
+
+.project-solution,
+.solution-paragraph {
+    display: block;
+    margin: 2em 0 2em 0;
+}
+
+.solution-link {
+    margin: 2em 0 2em 0;
+    display: inline;
+}
+
+.solution-title {
+    text-align: left;
+    font-size: 3em;
+}
+
+
+/* user personas START */
+
+.user-personas {
+    display: block;
+    height: auto;
+    width: 800px;
+    margin: 2em auto 4em auto;
+}
+
+
+/* user interviews START */
+
+.interview-heading {
+    text-align: center;
+    margin: 4em 0 0 0;
+}
+
+.research-interviews {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* research synthesis START */
+
+.research-synthesis {
+    margin: 4em 0 2em 0;
+}
+
+.synthesis-img {
+    display: block;
+    height: auto;
+    width: 500px;
+    margin: 2em auto 4em auto;
+}
+
+
+/* only for soma project */
+
+.synthesis-figma {
+    display: block;
+    margin: 2em auto 4em auto;
+}
+
+
+/* user journey START */
+
+.user-journey-info {
+    margin: 4em 2em 2em 3em;
+}
+
+.user-journey-map {
+    display: block;
+    height: auto;
+    width: 800px;
+    margin: 2em auto 4em auto;
+}
+
+
+/* storyboard for soma project */
+
+.storyboard-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.storyboard-soma {
+    display: block;
+    height: auto;
+    width: 500px;
+    margin: 2em auto 4em auto;
+}
+
+
+/* interaction prototypes */
+
+.prototype-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 25px 25px;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+}
+
+.prototype-images {
+    height: auto;
+    width: 300px;
+}
+
+
+/* sketching START */
+
+.ideation-info {
+    margin: 4em 2em 2em 3em;
+}
+
+.ideation-sketch {
+    display: block;
+    height: auto;
+    width: 500px;
+    margin: 2em auto 4em auto;
+}
+
+
+/* interaction flow START */
+
+.interaction-flow-info {
+    margin: 4em 2em 2em 3em;
+}
+
+.interaction-flow {
+    display: block;
+    height: auto;
+    width: 500px;
+    margin: 2em auto 4em auto;
+}
+
+
+/* figma interaction flow - soma */
+
+.soma-ixd-flow {
+    display: block;
+    height: 450;
+    width: 800;
+    margin: 2em auto 4em auto;
+}
+
+
+/* ui flow START */
+
+.ui-flow-info {
+    margin: 4em 2em 2em 3em;
+}
+
+.ui-flow {
+    display: block;
+    height: auto;
+    width: 600px;
+    margin: 2em auto 4em auto;
+}
+
+
+/* interactive prototype START */
+
+.interactive-prototype-info {
+    margin: 4em 2em 2em 3em;
+}
+
+.interactive-prototype {
+    display: block;
+    height: 1000px;
+    width: 800px;
+    margin: 2em auto 4em auto;
+}
+
+.newswhip-prototype {
+    display: block;
+    height: auto;
+    width: 800px;
+    margin: 2em auto 4em auto;
+}
+
+
+/* project result START */
+
+.project-result {
+    display: block;
+    margin: 4em 0 4em 0;
+}
+
+.result-title {
+    text-align: left;
+    font-size: 3em;
+}
+
+.project-video {
+    display: block;
+    height: 360px;
+    width: 640px;
+    margin: 4em auto 4em auto;
+}
+
+@media(max-width: 1248px) {
+    body {
+        width: auto;
+        margin: 80px 64px 48px 64px;
+    }
+    h1,
+    nav,
+    footer {
+        font-size: 24px;
+    }
+    .research-interviews img {
+        width: 128px;
+    }
+    .interview-icons {
+        margin: 0 18px 0 18px;
+    }
+    .storyboard-soma {
+        width: 400px;
+        margin: 0 18px 0 18px;
+    }
+}
+
+@media(max-width: 920px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        margin: 32px 0 0 0;
+    }
+    header div {
+        max-width: 300px;
+    }
+    header a {
+        margin: 0 16px 0 16px;
+    }
+    .typing-demo {
+        width: 10em;
+        animation: typing 2s steps(25), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: Josefin Sans;
+        font-size: 1.9em;
+    }
+}
+
+@media(max-width:780px) {
+    section {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px 24px;
+    }
+    section h1,
+    section.about div.img-about,
+    section.about div.description,
+    .image-gallery,
+    .prototype-gallery {
+        grid-column: 1 / span 4;
+        grid-template-columns: 1fr;
+    }
+    .project-hero {
+        width: 500px;
+        margin: 2em auto 2em auto;
+    }
+    .user-personas {
+        width: 500px;
+    }
+    .synthesis-figma {
+        height: 281px;
+        width: 500px;
+    }
+    .storyboard-soma {
+        width: 300px;
+        margin: 0 18px 0 18px;
+    }
+    .soma-ixd-flow {
+        height: 281px;
+        width: 500px;
+    }
+    .project-video {
+        display: block;
+        height: 281px;
+        width: 500px;
+    }
+}
+
+@media(max-width:660px) {
+    section {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px 24px;
+    }
+    section h1,
+    section.about div.img-about,
+    section.about div.description,
+    .image-gallery,
+    .prototype-gallery {
+        grid-column: 1 / span 4;
+        grid-template-columns: 1fr;
+    }
+}
+
+@Media(max-width: 500px) {
+    /* home page */
+    body {
+        margin: 32px 32px 32px 32px;
+    }
+    header div {
+        width: 100%;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    section.about div.img-about img {
+        height: auto;
+        width: 300px;
+    }
+    footer h1 {
+        text-align: center;
+    }
+    /* project page */
+    .project-hero {
+        width: 300px;
+        margin: 2em auto 2em auto;
+    }
+    .project-details {
+        display: flex;
+        flex-direction: column;
+    }
+    .project-description {
+        margin: 1em 0 1em 0;
+    }
+    .project-about,
+    .project-challenge,
+    .research-synthesis,
+    .user-journey-info,
+    .ideation-info,
+    .interaction-flow-info,
+    .ui-flow-info,
+    .project-solution,
+    .solution-paragraph {
+        margin: 2em 0 2em 0;
+    }
+    .user-personas {
+        width: 300px;
+    }
+    .research-interviews {
+        flex-direction: column;
+    }
+    .synthesis-figma {
+        height: 169px;
+        width: 300px;
+    }
+    .storyboard-container {
+        flex-direction: column;
+    }
+    .storyboard-soma {
+        width: 300px;
+        margin: 12px 18px 12px 18px;
+    }
+    .soma-ixd-flow {
+        height: 169px;
+        width: 300px;
+    }
+    .ui-flow {
+        width: 300px;
+    }
+    .project-video {
+        display: block;
+        height: 169px;
+        width: 300px;
+    }
+}
+
+#btnScrollToTop {
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f4BCBB;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #111118;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+#btnScrollToTop:active {
+    background: #ed9795;
+}
