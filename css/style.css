@@ -9,6 +9,9 @@ body {
     width: 1120px;
 }
 
+img, iframe {
+    border-radius: 12px;
+}
 
 /* index page styling starts here*/
 
@@ -45,12 +48,14 @@ a:hover {
     color: #f4BCBB;
 }
 
-section {
+
+section.about {
     margin: 80px auto 80px auto;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(12, 1fr);
     gap: 32px 32px;
     grid-auto-flow: dense;
+    justify-content: space-between;
 }
 
 section h1 {
@@ -64,11 +69,14 @@ section.about div.img-about {
     max-height: 640px;
     text-align: center;
     border-radius: 15px;
+    
+
 }
 
 section.about div.description {
     grid-column: 7 / span 6;
-    margin: 84px 0 0 0;
+    margin: auto;
+    display: block;
 }
 
 .about-description {
@@ -555,6 +563,14 @@ footer a {
         align-items: center;
         justify-content: center;
     }
+    section.about {
+        display: flex;
+        margin: 80px auto 80px auto;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px 32px;
+        grid-auto-flow: dense;
+        flex-direction: column;
+    }
     section.about div.img-about img {
         height: auto;
         width: 300px;
@@ -629,7 +645,7 @@ footer a {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #f4BCBB;
+    background: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     color: #111118;
     outline: none;
