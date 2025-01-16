@@ -564,7 +564,7 @@ footer a {
         justify-content: center;
     }
     .typing-demo {
-        font-size: 1.5em; /* slightly smaller text so it fits within 10em */
+        font-size: 1.2em; /* slightly smaller text so it fits within 10em */
     }
     section.about {
         display: flex;
