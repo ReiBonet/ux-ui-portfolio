@@ -191,36 +191,31 @@ footer a {
 }
 
 .typing-demo {
-    /* Let it size automatically to its content */
-    width: auto;
-    display: inline-block; /* ensures it only takes up as much space as the text needs */
-    
-    /* Keep the typewriter effect styles */
+    animation: typing 2s steps(21, end), blink .5s step-end infinite alternate;
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid;
-    
-    /* Any font/animation you’re using */
-    font-family: Josefin Sans;
+    display: inline-block;
     font-size: 2em;
-    animation: typing 2s steps(25), blink .5s step-end infinite alternate;
-    margin: 0; /* remove default margin if you want tighter spacing */
-}
+    letter-spacing: 0.1em; 
 
-
-
-@keyframes typing {
-    from { width: 0; }
-    to   { width: 20ch; } /* each character roughly 1ch wide */
-    /* e.g. 20 characters: steps(20, end) */
-    animation: typing 3s steps(20, end), blink .5s step-end infinite alternate;
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent
     }
-}
+
+    @keyframes typing {
+    from {
+    width: 0;
+    }
+    to {
+      width: 19ch; /* or 22ch if the emoji gets cut off on iOS */
+    }
+    }
+
+    @keyframes blink {
+    50% {
+    border-color: transparent;
+    }
+    }
+
 
 
 /* project page introduction styling starts here */
@@ -498,15 +493,6 @@ footer a {
     header a {
         margin: 0 16px 0 16px;
     }
-    .typing-demo {
-        width: 10em;
-        animation: typing 2s steps(25), blink .5s step-end infinite alternate;
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: 3px solid;
-        font-family: Josefin Sans;
-        font-size: 1.9em;
-    }
 }
 
 @media(max-width:780px) {
@@ -725,11 +711,6 @@ footer a {
     .overlay-menu {
       display: none; /* You could hide it entirely on desktop */
     }
-}
-
-  /* Show the overlay when '.open' class is toggled */
-.overlay-menu.open {
-    transform: translateY(0);
 }
 
   /* Overlay nav links */
