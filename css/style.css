@@ -191,35 +191,30 @@ footer a {
 }
 
 .typing-demo {
-    animation: typing-desktop 2s steps(21, end), blink .5s step-end infinite alternate;
+    animation: typing 2s steps(21, end), blink .5s step-end infinite alternate;
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid;
     display: inline-block;
     font-size: 2em;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1em; 
+
     }
 
-/* Default keyframes (for desktop) */
-    @keyframes typing-desktop {
-    from { width: 0; }
-    to   { width: 19ch; }
+    @keyframes typing {
+    from {
+    width: 0;
+    }
+    to {
+      width: 19ch; /* or 22ch if the emoji gets cut off on iOS */
+    }
     }
 
-/* On small screens, use a smaller final width
-     or a smaller font-size so it doesn’t get cut off */
-    @media (max-width: 500px) {
-    .typing-demo {
-      font-size: 1.6em; /* or whatever you prefer */
-    animation: typing-mobile 2s steps(21, end), blink .5s step-end infinite alternate;
+    @keyframes blink {
+    50% {
+    border-color: transparent;
     }
-
-    @keyframes typing-mobile {
-    from { width: 0; }
-      to   { width: 14ch; } /* short enough for small screens */
     }
-}
-
 
 
 
