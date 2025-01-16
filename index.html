@@ -14,14 +14,39 @@
 <body>
     <!--flex header with nav menu START-->
     <header>
-        <div class="typing-demo">Hello, I'm Reinaldo ☺</div>
-        <nav>
-            <a href="https://github.com/ReiBonet">GitHub</a>
-            <a href="https://www.instagram.com/reinaldo.bonet/?hl=en">Instagram</a>
-            <a href="https://www.linkedin.com/in/reinaldobonet/">Linkedin</a>
-            <a href="mailto:reinaldobonet@gmail.com">Email</a>
+        <!-- We change <div> to <h1> for semantic reasons, but you can keep <div> if you prefer -->
+        <h1 class="typing-demo">Hello, I'm Reinaldo ☺</h1>
+    
+        <!-- Hamburger toggle button (for mobile) -->
+        <button class="nav-toggle" aria-label="Open navigation">
+        <span class="material-icons">menu</span>
+        </button>
+    
+        <!-- Desktop nav (only shows on larger screens, hidden via CSS on mobile) -->
+        <nav class="nav-menu">
+        <a href="https://github.com/ReiBonet">GitHub</a>
+        <a href="https://www.instagram.com/reinaldo.bonet/?hl=en">Instagram</a>
+        <a href="https://www.linkedin.com/in/reinaldobonet/">Linkedin</a>
+        <a href="mailto:reinaldobonet@gmail.com">Email</a>
         </nav>
     </header>
+    
+    <!-- Full-screen overlay menu (initially hidden on mobile) -->
+    <div class="overlay-menu" id="overlayMenu">
+        <!-- Close Button -->
+        <button class="close-menu" aria-label="Close navigation">
+        <span class="material-icons">close</span>
+        </button>
+        
+        <nav>
+        <a href="#github">Github</a>
+        <a href="#instagram">Instagram</a>
+        <a href="#linkedin">Linkedin</a>
+        <a href="#email">Email</a>
+        </nav>
+    </div>
+    
+    
     <!--about section START-->
     <section class="about">
         <div class="img-about">
