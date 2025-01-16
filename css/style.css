@@ -19,7 +19,7 @@ header {
     display: flex;
     align-items: center;             /* Vertically center the heading, nav, and button */
     justify-content: space-between;  /* Spread them across the header left-right */
-    padding: 0 16px;                 /* Optional spacing inside the header */
+    padding: 0 0;                 /* Optional spacing inside the header */
     margin-bottom: 1em;              /* Some spacing below header if desired */
 }
 
