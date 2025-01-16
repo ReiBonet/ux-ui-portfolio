@@ -563,9 +563,7 @@ footer a {
         align-items: center;
         justify-content: center;
     }
-    .typing-demo {
-        font-size: 1.2em; /* slightly smaller text so it fits within 10em */
-    }
+
     section.about {
         display: flex;
         margin: 80px auto 80px auto;
