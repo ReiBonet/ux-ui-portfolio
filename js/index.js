@@ -12,11 +12,3 @@ overlayMenu.classList.add("open");
 closeMenuBtn.addEventListener("click", () => {
 overlayMenu.classList.remove("open");
 });
-
-/* Optional: Close overlay when a link is clicked
-overlayMenu.querySelectorAll("a").forEach(link => {
-link.addEventListener("click", () => {
-    overlayMenu.classList.remove("open");
-});
-});
-*/
